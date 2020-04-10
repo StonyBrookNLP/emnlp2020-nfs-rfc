@@ -1,0 +1,11 @@
+Main Contributions:
+
+\begin{itemize}
+    \item We introduce a probe (NMF probe) that estimates how much non-multi-hop reasoning a model (i) could have done [upper bound] and (ii) does [lower bound] on the dataset in a model-agnostic way.
+    \item We introduce an transformation that requires the models to determine if there is sufficient information to answer the question and show that:
+    \begin{itemize}
+        \item The maximum number of questions a model can answer with non-multi-fact reasoning on the transformed dataset is significantly lower than what it can on the original dataset.
+        \item Transformation provides an incentive for multi-hop capable models to do lesser non-multi-hop reasoning as measured by our NMF probe.
+    \end{itemize}
+    \item We apply this transformation to HotPotQA and show: Transformed dataset can be easily curated to ensure this transformed questions are still valid. (This is in contrast to transition from Squad 1.0 to Squad 2.0 where this was done manually.) + Empirical main results
+\end{itemize}

@@ -1,0 +1,86 @@
+\section{Experiments}
+
+\subsection{Dataset}
+
+\subsection{Models}
+% Explain the choice of the model
+
+
+\subsection{Evaluation}
+
+
+\begin{table*}[t!]
+    \centering
+    \setlength\tabcolsep{7pt}
+    \begin{tabular}{lcccc}\toprule
+        XLNet & Ans & Ans + Sup & Ans + Suff & Ans + Sup + Suff \\
+        \midrule \midrule
+        Base                    & xx.x & xx.x & xx.x & xx.x \\
+        \midrule
+        NMF                     & xx.x & xx.x & xx.x & xx.x \\
+        \bottomrule
+        Fraction                & xx.x & xx.x & xx.x & xx.x \\
+        \midrule
+        Delta                   & xx.x & xx.x & xx.x & xx.x \\
+        \bottomrule
+    \end{tabular}
+    \caption{1. Extent of NMF reasoning possible in transformed dataset task (Ans+Sup+Suff) is significantly lesser than in original dataset task (Ans+Rel+Suff) 2. Support Sufficiency (Suff) prediction is significantly more difficult via NMF reasoning than Supporting Facts (Sup) prediction. 3. Previous works have shown that Ans prediction is hackable by non-multi-fact reasoning, but we show that Ans+Sup prediction is also significantly hackable.}
+    \label{table:main-results}
+\end{table*}
+
+
+
+% Older smaller tables
+\eat{
+
+    % \begin{table}[H]
+    %     \centering
+    %     \setlength\tabcolsep{7pt}
+    %     \small
+    %     \begin{tabular}{lcp{1.5cm}}\toprule
+    %         XLNet & Ans + Rel & Ans + Rel + Suff \\
+    %         \midrule
+    %         MultiFact           & xx.x & xx.x \\
+    %         \midrule
+    %         NonMultiFact        & xx.x & xx.x \\
+    %         \bottomrule
+    %     \end{tabular}
+    %     \caption{Extent of NMF reasoning possible in Transformed dataset task (Ans+Rel+Suff) is significantly lesser than in Original dataset task (Ans+Rel+Suff)}
+    %     \label{table:main-results}
+    % \end{table}
+    
+    
+    % \begin{table}[H]
+    %     \centering
+    %     \setlength\tabcolsep{7pt}
+    %     \small
+    %     \begin{tabular}{lccp{1.5cm}}\toprule
+    %         XLNet & Ans+Rel & Ans+Suff \\
+    %         \midrule
+    %         MultiFact           & xx.x & xx.x \\
+    %         \midrule
+    %         NonMultiFact        & xx.x & xx.x \\
+    %         \bottomrule
+    %     \end{tabular}
+    %     \caption{Sufficiency prediction is significantly more difficult via Non-multi-hop reasoning than relevance prediction.}
+    %     \label{table:main-results-2}
+    % \end{table}
+    
+    
+    
+    % \begin{table}[H]
+    %     \centering
+    %     \setlength\tabcolsep{7pt}
+    %     \small
+    %     \begin{tabular}{lccp{1.5cm}}\toprule
+    %         XLNet & Ans & Ans+Rel \\
+    %         \midrule
+    %         MultiFact           & xx.x & xx.x \\
+    %         \midrule
+    %         NonMultiFact        & xx.x & xx.x \\
+    %         \bottomrule
+    %     \end{tabular}
+    %     \caption{Previous works have shown that Answer prediction is hackable by non-multi-hop reasoning, but we show that answer+relevance prediction is also significantly hackable.}
+    %     \label{table:main-results-3}
+    % \end{table}
+}

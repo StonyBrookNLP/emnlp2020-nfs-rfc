@@ -1,0 +1,80 @@
+\-\ \\
+\noindent \textbf{Main Contributions}
+
+Informally, there are two key messages we want to convey in main contributions:
+
+\begin{itemize}
+    \item We provide a framework to probe NkMF or interaction-less reasoning for arbitrary prediction properties.
+    \item We provide a better dataset \textit{task} for measuring the progress of multi-hop reasoning.
+\end{itemize}
+
+
+
+
+% V1
+\eat{
+    % \noindent \textbf{Contribution 1:} We introduce:
+    % \begin{itemize}
+    %     \item a notion of non-multi-hop reasoning \ashish{will need early clarity on exactly what we mean by NMF reasoning here: not synthesizing information from all $k$ supporting facts} based on interaction among supporting facts.
+    %     \item we define a quantifiable definition of n
+        
+    %     \item to define what it means to predict the desired question property (eg. answer, supporting facts etc) without using XX, which we call non-multi-fact reasoning.
+    %     \item a model-agnostic framework (NMF probe) to estimate the maximum \ashish{I like `estimate the max' :-)} number of questions for which information is extractable by the model, to correctly predict the desired question property (eg. answer, fact relevance etc) using only non-multi-hop reasoning.
+    % \end{itemize}
+}
+
+% V2
+\noindent \textbf{Contribution 1:} We introduce a framework to
+\begin{itemize}
+    \item to define what it means to predict the desired question property (eg. answer, supporting facts etc) without synthesising information \textit{all} the supporting facts, which we call non-multi-fact reasoning.
+    \item a model-agnostic probe to estimate the maximum number of questions for which information is extractable by the model, to correctly predict the desired question property (eg. answer, fact relevance etc) using only non-multi-fact reasoning.
+\end{itemize}
+
+
+
+% V1
+\eat{
+    % \noindent \textbf{Contribution 2:} We introduce an automatic transformation of the multi-hop QA dataset that, over answer and fact relevance prediction, additionally requires the models to determine if there is sufficient information to answer the question (sufficiency prediction) and show that:
+    % %
+    % \begin{itemize}
+    %     \item The best performance achievable through only non-multi-hop reasoning on the transformed dataset is significantly lower than the best performance achievable through only non-multi-hop reasoning on the original dataset, keeping the performance achievable by good multi-hop reasoning (humans) the same. \ashish{good message, but we should find a way to simplify the sentence}
+        
+    %     \item A multi-hop capable model, at maximum, can opt for a significantly lesser degree of score via non-multi-hop reasoning on the transformed dataset than on the original dataset.
+    % \end{itemize}
+}
+
+
+% V2
+\noindent \textbf{Contribution 2:} On a large-scale multi-fact QA dataset HotPotQA, using powerful XLNet based model, we show that from the questions in which model can predict both answer and supporting facts properties correctly, 80\% of them can be predicted using only non-multi-hop reasoning, making these properties significantly cheatable.
+
+
+% V2
+\noindent \textbf{Contribution 3:} To mitigate this, we introduce an automatic transformation of the multi-fact QA dataset that additionally requires the models to determine if there is sufficient information to answer the question (sufficiency property).
+
+
+% V2
+\noindent \textbf{Contribution 4:} We apply this transformation on HotPotQA and using powerful XLNet based model, we show that 
+\begin{itemize}
+    \item human upper bound on transformed dataset is largely the same as the original dataset.
+    \item from the questions in which model can predict all of answer,  supporting facts and sufficiency properties correctly, only 50\% of them can be predicted using only non-multi-hop reasoning, making the transformed dataset significantly less cheatable.
+\end{itemize}
+
+
+% ADD THE following in the introduction and discussion section:
+\eat{
+    % \begin{itemize}
+    %     \item The best performance achievable through only non-multi-hop reasoning on the transformed dataset is no more than the best performance achievable through only non-multi-hop reasoning on the original dataset, keeping the performance achievable by good multi-hop reasoning (humans) the same.
+    %     \item A multi-hop capable model, at maximum, can opt for a no more degree of score via non-multi-hop reasoning on the transformed dataset than on the original dataset.
+    % \end{itemize}
+}
+
+
+\eat{
+    % \noindent \textbf{Contribution 3:} On multi-hop dataset HotPotQA, we show that:
+    
+    % \begin{itemize}
+    %     \item The transformation for sufficiency prediction can be undertaken automatically and the human upper bound (solvability) of the transformed dataset is largely the same.
+        
+    %     \item For ~70\% of the questions, both answer and relevant facts can be predicted correctly using only non-multi-hop reasoning on the original dataset, whereas for only for ~37\% of the questions, all answer, fact relevance and sufficiency can be predicted correctly by non-multi-hop reasoning on the transformed dataset using powerful XLNet based model.\ashish{good message. simplify/split the long sentence} The trend is similar for other multi-hop capable models as well.
+    % \end{itemize}
+}
